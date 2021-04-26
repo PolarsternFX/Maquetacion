@@ -1,95 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetacion HTML5</title>
 
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
 
-    <title>UTN-BA</title>
 </head>
 
-<body id="contenedor">
+<body>
 
-    <header class="header">
+    <main id="mainContent">
 
-        <div class="logo">
-
-            <a href="index.html">
-
-                <h1>
-                    utn-ba
-                </h1>
-
-            </a>
-
-        </div>
-
-    </header>
+        <header class="header">
+            <div class="logo">
+                <a href="img/banner.jpg" class="linklogo">
+                    <h1>utn</h1>
+                </a>
+            </div>
+        </header>
 
         <nav class="navbar">
+            <ul class="menuPrincipal">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="noticia1.html">Novedades</a>
+                </li>
+                <li>
+                    <a href="noticia2.html">Marketing</a>
+                </li>
+                <li>
+                    <a href="noticia3.html">Culturales</a>
+                </li>
+                <li>
+                    <a href="noticia4.html">Tecnicaturas</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto </a>
+                </li>
 
-            <ul>
-                <li>
-                    <a href="index.html"> Home </a>
+                <!-- Limpiar Floats -->
+                <div class="limpiaFloat"></div>
 
-                </li>
-                <li>
-                    <a href="noticia1.html"> Noticias </a>
-                </li>
-                <li>
-                    <a href="noticia2.html"> Más Noticias </a>
-                </li>
-                <li>
-                    <a href="contacto.html"> Contacto </a>
-                </li>
             </ul>
-
         </nav>
 
-        <main>
+        <section id="portada">
+            <!-- <p>Portada</p> -->
+            <article class="destacado">
+                <a href="noticia1.html">
+                    <h2>Lanzamiento de la oferta de Talleres para el 1er Cuatrimestre</h2>
+                </a>
+                <br>
+                <h3>¡Vuelven los talleres del programa Experiencias Universitarias para Personas Mayores, en formato
+                    virtual y con inscripción previa!</h3>
+                <!-- <a href="noticia1.html">ver mas...</a> -->
+            </article>
 
-            <section id="banner">
-                <a href> Banner (iframe) </a>
-            </section>
+            <article class="default">
+                <figure class="imgNota">
+                    <a href="noticia1.html"> <img src="img/utn1.png" alt="nota 1"> </a>
+                    <figcaption>
+                        ¡Vuelven los talleres del programa Experiencias Universitarias para Personas Mayores, en formato
+                        virtual y con inscripción previa!
+                    </figcaption>
+                </figure>
+                <h3>Lanzamiento de la oferta de Talleres para el 1er Cuatrimestre</h3>
+                <p>
+                    La oferta que se presenta para el primer cuatrimestre de 2021, abarca los siguientes títulos:
+                    Estimulación Cognitiva; Taller de Lectura de Cuentos; Escuchándonos con Arte; Juegos de Mente;
+                    Escritura; Poesía; Historia Contemporánea del Siglo XIX; Uso de Videollamadas; Jugarte a Crear;
+                    Taller de Actividad Física y Salud; y un Taller Literario denominado La Guarida de las Palabras.
+                </p>
 
-            <div id="main" role="main">
-                <div class="titulo">
-                    <h1>Titulo Destacado</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae harum tempore voluptatibus voluptas, deserunt nam? Omnis saepe quis quae vero qui sint, impedit eum fugit fuga assumenda. Labore, distinctio aspernatur.</p>
-                </div>
-            
-                <div class="titulo1">
-                    <h2>Título 1</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam ratione saepe nihil nemo modi dicta reprehenderit in architecto quos, doloribus praesentium quidem. Odit quaerat minima et in repellendus magni fugiat.</p>
-                </div>
-            
-                <div class="titulo2">
-                    <h2>Título 2</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, fugiat? Saepe iusto porro, delectus commodi fugiat dolor unde quidem, officiis illum vero odio sapiente reiciendis iste illo similique voluptas adipisci.</p>
-                </div>
-            
-                <div class="titulo3">
-                    <h2>Título 3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sit delectus, quos laborum nemo debitis nihil voluptatem temporibus. Beatae quidem, fugit illum cupiditate dolor rem excepturi culpa repellat a deleniti.</p>
-                </div>
+                <a href="noticia1.html"> Leer más...</a> <!-- Enlace a página -->
+            </article>
 
-                <div class="titulo4">
-                    <h2>Título 4</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic suscipit praesentium illo iure porro asperiores totam ad voluptatem iste fuga ut enim molestiae, libero, laborum quae, nihil nulla doloremque animi.</p>
-                </div>
+            <article class="default">
+                <figure class="imgNota">
+                    <a href="noticia2.html"> <img src="img/utn2.png" alt="nota 2"> </a>
+                    <figcaption>
+                        Charlas Informativas: Capacitaciones de Marketing y Comunicación de Proyectos Sostenibles.
+                    </figcaption>
+                </figure>
+                <h3>CAPACITACIONES DE MARKETING</h3>
+                <p>
+                    Para empezar a programar el año con las capacitaciones que querés hacer, te invitamos a participar
+                    de esta charla.
+                </p>
+                <p>Te contaremos de qué van nuestras capacitaciones en Marketing.</p>
 
-            </div>
+                <a href="noticia2.html"> Leer más...</a> <!-- Enlace a página -->
+            </article>
 
-        </main>
+            <article class="default">
+                <figure class="imgNota">
+                    <a href="noticia3.html"> <img src="img/utn3.png" alt="nota 3"> </a>
+                    <figcaption>Propuestas Culturales 2021</figcaption>
+                </figure>
+                <h3>La Dirección de Cultura lanza su oferta de actividades para el primer cuatrimestre</h3>
+                <p>
+                    Con la llegada de los tiempos de aislamiento y/o distanciamiento social, el equipo de trabajo de
+                    Cultura rápidamente migró su oferta al ámbito virtual para garantizar la continuidad de propuestas
+                    de formación, recreación y concientización orientadas a la comunidad en general y a la población de
+                    personas mayores en particular.
+                </p>
+                <p>
+                    De este modo, se plantearon múltiples ejes que constituyen la presentación de las propuestas
+                    culturales 2021.
+                </p>
+
+                <a href="noticia3.html"> Leer más...</a> <!-- Enlace a página -->
+            </article>
+
+            <article class="default">
+                <figure class="imgNota">
+                    <a href="noticia4.html"> <img src="img/utn4.jpg" alt="nota 4"> </a>
+                    <figcaption>Se desarrollarán el 5 y 10 de Marzo a las 19 horas. Requieren inscripción previa.
+                    </figcaption>
+                    <!-- <figcaption>
+						epigrafe de la imagen
+					</figcaption> -->
+                </figure>
+                <h3>Tecnicatura Universitaria en Gestión Aeronáutica 2021: Charlas informativas</h3>
+                <p>
+                    Inicia una nueva cohorte de la Tecnicatura Universitaria en Gestión Aeronáutica.
+                </p>
+                <p>
+                    Y con el objetivo de informar acerca de la cursada, el programa y las modalidades de dictado, se
+                    ofrecen charlas abiertas e informativas previstas para el 5 y 10 de Marzo a las 19 hs
+                    respectivamente.
+                </p>
+
+                <a href="noticia4.html"> Leer más...</a> <!-- Enlace a página -->
+
+            </article>
+
+            <aside class="banner-nota">
+                <a href="http://frba.utn.edu.ar">
+                    <img src="img/banner.jpg" alt="Banner UTN">
+                </a>
+            </aside>
+
+            <!-- Limpiar Floats -->
+            <div class="limpiaFloat"></div>
+
+        </section>
+
+        <aside class="sidebar-der">
+            <!-- aca va el banner -->
+            <span>insertar Banner</span>
+        </aside>
 
         <footer class="footer">
-            <br>
-            © 2017 - Todos los Derechos Reservados
+            <p>
+                &copy; 2021 - Derechos Reservados
+            </p>
+            <p>Desarrollado por <a href="https://github.com/PolarsternFX">PolarsternFX</a></p>
         </footer>
+
+    </main>
 
 </body>
 
 </html>
 
+<!-- COMENTARIOS: SE INCLUYERON LINKS EXTERNOS Y VIDEO EN "TECNICATURAS"-->
+
+<!-- en el "Header" se coloca: <a href="img/banner.jpg" class="linklogo">? -->
+<!-- No puedo alinear el NavBar (Justificado) -->
+<!-- No puedo separar con espacios los Títulos, Epígrafes y Notas -->
+<!-- Si el Párrafo es extenso, se corta -->
+<!-- No puedo colocar el Banner (abajo) de Index como en las otras Páginas-->
+<!-- Aside/Clear Float? -->
+<!-- Ajuste de tamaño de fotos/íconos a Redes Sociales- Insertar? -->
+<!-- Cada página un color diferente? -->
+<!-- Sugerencias para RESPONSIVE? -->

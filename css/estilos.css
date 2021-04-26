@@ -1,0 +1,248 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+
+
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+/*main*/
+    #mainContent{
+        width:85vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/*Header*/
+    .header{
+        background: rgb(139, 53, 53);
+        color: azure;
+        height:80px;
+        margin-bottom: 10px;
+        }
+        .logo{
+            text-transform: uppercase;
+            text-align: left;
+            padding: 10px;
+            }
+            .logo a{
+                color:white;
+                text-decoration: none;
+            }
+
+            .logo :hover{
+                background: rgb(216, 169, 169);
+                color: black; 
+            }
+
+/*nav*/
+    .navbar{
+        background:rgb(216, 64, 72);
+        color:white;
+        /* padding:0.7em; */
+        }
+        /*selectores anidados
+        padre descendiente{
+            propiedades que solo modifican al hijo
+        }
+        section p{ color:green; }
+        
+        abuelo>padre>hijo{}        
+        section>p{ color:green;}
+        */
+    /* .navbar a{ color:white} */
+
+    /*Menu de Navegacion*/
+    .navbar ul{
+        list-style-type:none;
+        text-align: center;
+        /* padding:0; ya esta eliminado por el universal (*{})*/
+        }
+        .navbar ul li{
+            /*float:left;util para menus desplegables*/
+            display: inline-block ;/*no util para menus desplegables*/
+            }
+            .navbar ul li a{
+                text-decoration: none;
+                display:inline-block;
+                padding: 10px;
+                color: whitesmoke;
+                }
+                /*pseudo-clases*/
+                .navbar ul li a:hover{
+                    background: palevioletred;
+                    color: black; 
+                }
+
+/* #portada:hover,aside:hover{
+    background:tomato;
+} */
+        
+.limpiaFloat{clear:both}
+
+/*contenido*/
+
+        /*modelo de caja
+        el ancho real del elemento = width+padding+border
+        En html5, con la prop box-sizing:border-box, el ancho real es el width
+        */
+    
+    #portada{
+        width:78%;
+        background:rgb(78, 77, 77);
+        padding:1.6em;
+        float:left;
+        box-sizing:border-box;
+        }
+
+        /*agrupamiento de selectores*/
+        .destacado,.default{
+            background: whitesmoke;
+            font-size: 15px;
+            padding:0.7em;
+        }
+        .destacado{
+            margin-bottom:0.6em;
+            background: rgb(226, 133, 133);
+        }
+        .default{
+            background: palegoldenrod;
+            box-sizing:border-box;
+            float:left;
+            width:50%;
+            height:500px;
+        }
+
+        /*imagenes*/
+        .imgNota img{
+            /*el ancho se aplica a <img>*/
+            width:100%;
+        }
+
+    /*Noticias*/
+
+    .borde{
+        padding:0.8em;
+        background:rgba(255, 255, 255, 0.5);
+        color: rgb(153, 46, 46);
+        }
+        .borde a{ 
+        color:rgb(68, 9, 9);
+        text-decoration: none;
+        }
+
+    .notasola{
+        background: rgb(192, 155, 228);
+        padding:1em;
+    }    
+    .notasola .titulos{
+        padding:0.5em;
+        }
+        .notasola .titulos h2{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:2em;
+            margin-bottom:0.5em;
+        }
+        .notasola .titulos h3{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:1.5em;
+            margin-bottom:0.5em;
+        }
+
+    .notasola figure img{
+        width: 100%;
+    }
+    .notasola .textos{
+        padding:1em 0 1em 0;/*top right bottom left -> en sentido horario x*/
+        margin-bottom:2em;
+    }
+    .notasola .textos p{
+    margin-bottom:0.6em;
+    }
+    .banner-nota{
+        border:1px solid grey
+    }
+    .banner-nota a img{
+        width:100%
+    }
+
+
+    /*Formulario Contacto*/
+
+    #formContacto{
+        padding: 1.2em;
+        background: rgb(209, 202, 202);
+        border-radius: 10px;
+        margin-bottom: 2em;
+        margin-top: 1em;
+        }
+        #formContacto input, #formContacto select, #formContacto textarea{
+            background:rgb(170, 180, 231);
+            width:100%;
+            padding:0.8em;
+            box-sizing: border-box;
+            margin-bottom:1em;
+            border-radius:3px;
+            border:none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:1em;
+            }
+            /* .check{ width:5% !important;} /*mala practica*/
+            /*.btn-envio{width:50% !important;} */
+
+            /*selector de etiqueta[atributo="valor"]*/
+            #formContacto input[type="checkbox"]{
+                width:auto;
+            }
+            #formContacto input[type="submit"]{
+                width:50%;
+            }
+
+            /*Pseudoclases*/
+            #formContacto input[type="submit"]:hover{
+                background:rgb(118, 207, 200);
+                color: solid black;
+            }
+            #formContacto input:focus{
+                background:rgb(177, 207, 177); 
+            }
+            #formContacto input:valid{
+                border:1px green solid;
+            }
+            #formContacto input:invalid{
+                border:1px red solid;
+            }
+
+
+
+    .sidebar-der{
+        width:20%;
+        background:grey;
+        height:100px;
+        padding:20px;
+        float:right;
+        box-sizing:border-box;
+    }
+
+    .footer{
+        clear:both;
+        background: rgb(139, 53, 53);
+        color:white;
+        text-align:center;
+        padding:10px;
+        font-size: 0.9em;
+    }
+
+
+
+
+            
+    
+
+
+
+
