@@ -237,3 +237,56 @@ html{
         font-size: 0.9em;
     }
 
+    @media screen and (min-width: 400px) and (max-width:800px) {
+        
+        #mainContent{
+            display: block;
+            width: auto;
+            padding: 0.5em;
+        }
+
+        body{
+            background: pink;
+        } 
+    
+        .navbar{
+            background: palevioletred;
+            width: 100%;
+        }
+    
+        .navbar ul li{
+            width: 100%;
+            text-align: justify;
+            flex-wrap: wrap;
+        }
+
+        .default{
+            width: 100%;
+            padding: 0.1em;
+            font-size: 15px;
+        }
+
+        .imgNota{
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        figcaption{
+            font-size: 1em;
+            padding: 0.1em;
+        }
+
+        h3{
+            margin-top: 5px;
+            text-align: center;
+        }
+        p{
+            margin-top: 5px;
+            font-size: 12px;
+        }
+        .footer{
+            text-align: center;
+            width: auto;
+        }
+}
+    
